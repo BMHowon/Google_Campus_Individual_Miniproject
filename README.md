@@ -1,1 +1,1 @@
-# Google_campus_individual_miniproject
+# Google_Campus_Individual_Miniproject
