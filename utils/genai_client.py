@@ -9,7 +9,6 @@ class GenAIWrapper:
     def call_text_model(self, prompt: str, model="gemini-1.5-flash", max_output_tokens=512) -> str:
         try:
             resp = self.client.models.generate_content(model=model, contents=prompt)
-            # 다양한 SDK 형태 대응
             text = getattr(resp, "text", None)
             if text:
                 return text
